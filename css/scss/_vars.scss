@@ -1,0 +1,12 @@
+$black: #282828;
+$white: #FFFFFF;
+$yellow:#FFC700;
+$light-gray: #EDEDED;
+$dark-gray: #D4D4D4;
+$blue: #0499DD;
+$cyan: #17C1BC; // end color for gradient
+
+// These breakpoints are taken from bootstrap 
+// for use it you can write  map-get($grid-breakpoints, md)
+//ex:  @media (max-width:map-get($grid-breakpoints, md))
+$grid-breakpoints: (xs: 0, xsm: 321px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);

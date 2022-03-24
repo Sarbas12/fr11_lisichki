@@ -1,0 +1,262 @@
+.general_small-text // варианты опций в боковых фильтрах и описания карточек
+
+    {
+    font-family: $title_font;
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
+
+    @include media-max-width(lg) {
+        font-size: 64px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 54px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 48px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 42px;
+    }
+}
+
+.header-title {
+    font-family: $title_font;
+    font-size: 72px;
+    font-weight: 700;
+    color: $white;
+
+
+    @include media-max-width(lg) {
+        font-size: 64px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 48px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 36px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 28px;
+    }
+}
+
+.header-subtitle //пункты меню
+
+    {
+    font-family: $title_font;
+    font-size: 14px;
+    font-weight: 500;
+    color: $white;
+
+
+    @include media-max-width(lg) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 12px;
+    }
+}
+
+.header-subtitle_highlighted {
+    color: $yellow;
+}
+
+.mainfilter-text,
+.footer_subtitle-text {
+    font-family: $title_font;
+    font-size: 14px;
+    font-weight: 500;
+    color: $black;
+
+    // color: $light;
+    @include media-max-width(lg) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 12px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 12px;
+    }
+}
+
+.mainfilter-tabs_highlighted //подсветка опций в главном фильтре
+
+    {
+    color: $blue;
+}
+
+.buttons-text {
+    font-family: $title_font;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+
+    @include media-max-width(lg) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 14px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 14px;
+    }
+}
+
+.sidefilter-header {
+    font-family: $title_font;
+    font-size: 14px;
+    font-weight: 700;
+    color: $blue;
+
+}
+
+.sidefilter-options {
+    font-family: $title_font;
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+}
+
+.cards-block_main-header {
+    font-family: $title_font;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue;
+
+    @include media-max-width(lg) {
+        font-size: 24px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 24px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 24px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 24px;
+    }
+}
+
+.cards-block_tour-type {
+    font-family: $title_font;
+    font-size: 12px;
+    font-weight: 500;
+    color: $yellow;
+
+    @include media-max-width(lg) {
+        font-size: 12px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 12px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 12px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 12px;
+    }
+}
+
+.cards-block_tour-name {
+    font-family: $title_font;
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+
+    @include media-max-width(lg) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 18px;
+    }
+}
+
+.cards-block_tour-price {
+    font-family: $title_font;
+    font-size: 18px;
+    font-weight: 700;
+    color: $blue;
+
+    @include media-max-width(lg) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 18px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 18px;
+    }
+}
+
+.cards-block_ticket-type {
+    font-family: $title_font;
+    font-size: 10px;
+    font-weight: 500;
+    color: $black;
+
+    @include media-max-width(lg) {
+        font-size: 10px;
+    }
+
+    @include media-max-width(md) {
+        font-size: 10px;
+    }
+
+    @include media-max-width(sm) {
+        font-size: 10px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 10px;
+    }
+}
