@@ -54,7 +54,7 @@
 
 
 .icon.active .icon_element-bar:nth-child(2) {
-    -webkit-transform: rotate(0deg) translateX(-2.1px);
+    -webkit-transform: rotate(0deg) translateY(-2.1px);
     transform: rotate(0deg) translateY(-2.1px);
 }
 
@@ -100,4 +100,41 @@
     background-image: linear-gradient(to right, $blue, $cyan);
     border-radius: 40px;
     border: none;
+}
+
+.button__reset {
+    width: fit-content;
+    height: 19.8px;
+    margin: 12px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.button__reset-icon {
+    align-self: center;
+    height: fit-content;
+    margin-right: 3px;
+}
+
+.icon__reset-button {
+    background-color: $light-gray;
+    width: 14px;
+    height: 2px;
+    display: block;
+    border-radius: 2px;
+
+    &:nth-child(1) {
+        transform: translateY(-1px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+        transform: translateY(-2.8px) rotate(-45deg);
+    }
+
+
+}
+
+.icon__reset_text {
+    margin: 0 0 0 3px;
 }
