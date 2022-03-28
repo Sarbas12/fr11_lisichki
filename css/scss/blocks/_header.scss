@@ -1,7 +1,57 @@
-.header_container picture {
+.header {
     position: relative;
-    width: 1400px;
-    height: 290px;
-    margin-top: 0px;
-    margin-left: 0px;
+    display: flex;
+
+    &__container {
+        height: auto;
+        margin: auto;
+    }
+
+    &__picture {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+
+        z-index: -2;
+        padding: 0px;
+    }
+
+    &__logo {
+        display: flex;
+        position: relative;
+        margin-top: 27px;
+        margin-left: 160px;
+
+        width: 40px;
+        height: 58px;
+    }
+
+    &__title {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 160px;
+        height: 88px;
+        width: 756px;
+    }
+
+    &__navbar {
+        height: 17px;
+        padding: 10px 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__navbar-item {
+        margin-top: 17px;
+        margin-left: 977px;
+        text-decoration: none;
+        transition: all 0.5s;
+
+        li {
+            margin: 0px 0px 0px 20px;
+        }
+    }
 }
