@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: url(/fonts/Montserrat-Bold.ttf);
@@ -355,8 +356,9 @@
 }
 
 .header__container {
+  margin: 0;
   height: auto;
-  margin: auto;
+  width: auto;
 }
 
 .header__picture {
@@ -365,7 +367,6 @@
   display: flex;
   position: absolute;
   width: 100%;
-  height: 300px;
   z-index: -2;
   padding: 0px;
 }
@@ -392,8 +393,8 @@
 }
 
 .header__navbar {
-  height: 17px;
-  padding: 10px 0;
+  margin-top: -20px;
+  margin-right: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,20 +402,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .header__navbar-item {
-  margin-top: 17px;
-  margin-left: 977px;
+  line-height: inherit;
   text-decoration: none;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0px 0px 0px 30px;
 }
 
-.header__navbar-item li {
-  margin: 0px 0px 0px 20px;
+.header__navbar-item:visited {
+  color: #FFFFFF;
+  /* Цвет посещённой ссылки */
+  text-decoration: none;
+}
+
+.header__navbar-item:hover {
+  color: #FFC700;
+  /* Цвет ссылки при наведении */
+  text-decoration: none;
+  /* Добавляем подчёркивание */
 }
 /*# sourceMappingURL=main.css.map */
