@@ -347,6 +347,14 @@
   }
 }
 
+.header_container picture {
+  position: relative;
+  width: 1400px;
+  height: 290px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
 .mainFilter_container {
   height: 260px;
   border: 1px solid #0984aa;
