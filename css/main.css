@@ -1,4 +1,7 @@
+
+=======
 @charset "UTF-8";
+
 @font-face {
   font-family: "Montserrat";
   src: url(/fonts/Montserrat-Bold.ttf);
@@ -348,6 +351,110 @@
   }
 }
 
+
+.mainFilter_container {
+  height: 260px;
+  border: 1px solid #0984aa;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 40px;
+  color: black;
+}
+
+.mainContent_container {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.mainFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainFilter_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.mainfilter-text {
+  margin-bottom: 50px;
+}
+
+.mainfilter-text_item {
+  margin-left: 20px;
+}
+
+.mainFilter_button {
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 10px;
+  width: 235px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fa-location-dot {
+  color: #0499DD;
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  text-align: end;
+  margin-right: -30px;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+
+.mainFilter_input_place,
+.mainFilter_input_date,
+.mainFilter_input_people {
+  padding-left: 10px;
+  height: 50px;
+  width: 235px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sidefilter {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.sideFilter_button {
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 40px;
+  width: 225px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+=======
 .header {
   position: relative;
   display: -webkit-box;
@@ -426,5 +533,6 @@
   /* Цвет ссылки при наведении */
   text-decoration: none;
   /* Добавляем подчёркивание */
+
 }
 /*# sourceMappingURL=main.css.map */
