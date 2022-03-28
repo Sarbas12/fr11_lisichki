@@ -5,18 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Pero travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/aae706d4e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
-    
+    <!-- header start -->
+    <header id="header">
+        <div class="header__container h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col">
+                    <img class="header__picture" src="assets/images/header_picture.png" alt="header picture">
+                    <img class="header__logo" src="assets/images/logo_color.png" alt="logo">
+                    <nav class="header__navbar">
+                        <a class="header__navbar-item nav-item header-subtitle" href="#tours">ЭКСКУРСИИ</a>
+                        <a class="header__navbar-item nav-item header-subtitle" href="#contacts">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__container hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#tours">ЭКСКУРСИИ</a></li>
+                <li><a class="menu__item" href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <h1 class="header__title header-title">НАШИ ЭКСКУРСИИ</h1>
+        </div>
+    </header>
+    <!-- header end -->
+
     <main>
-<!--Main Filter-->
+        <!--Main Filter-->
         <div class="mainFilter_container container  border-0">
             <div class="container mainFilter">
                 <div class="row">
@@ -25,7 +54,7 @@
                         <nav class="mainfilter-text">
                             <a class="mainfilter-text_item mainfilter-text" href="#">АВТОБУСНЫЙ ТУР</a>
                             <a class="mainfilter-text_item mainfilter-text" href="#">ДЖИППИНГ</a>
-                            <a class="mainfilter-text_item mainfilter-text"  href="#">ЯХТИНГ</a>
+                            <a class="mainfilter-text_item mainfilter-text" href="#">ЯХТИНГ</a>
                         </nav>
                     </div>
                     <!-- <div class="col"></div> -->
@@ -36,14 +65,14 @@
                             
                             <i class="fa-solid  fa-location-dot fa-fade fa-2x" aria-hidden="true"></i>
                             <input type="text" class="mainFilter_input_place border-0">
-                                
+
                         </div>
                     </div>
                     <div class="col">
                         <input type="date" class="mainFilter_input_date border-0">
                     </div>
                     <div class="col">
-                        <input type="text" class="mainFilter_input_people border-0" >
+                        <input type="text" class="mainFilter_input_people border-0">
                     </div>
                     <div class="col">
                         <button class="mainFilter_button buttons-text border-0">Показать</button>
@@ -57,17 +86,20 @@
                 <!--Aside filter-->
                 <aside class="col-3 sidefilter accordion accordion-flush">
                     <h3 class="sidefilter-header">Фильтры</h3>
-                    
+
                     <!--Price filter-->
                     <div class="accordion-item">
                         <h2 class="accordion-header sidefilter-options" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            Стоимость
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Стоимость
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body general_small-text">
-                            (фильтр)
+                                (фильтр)
                             </div>
                         </div>
                     </div>
@@ -75,13 +107,16 @@
                     <!--People filter-->
                     <div class="accordion-item">
                         <h2 class="accordion-header sidefilter-options " id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            Количество человек
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Количество человек
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body general_small-text">
-                            (фильтр)
+                                (фильтр)
                             </div>
                         </div>
                     </div>
@@ -89,13 +124,16 @@
                     <!--Location filter-->
                     <div class="accordion-item">
                         <h2 class="accordion-header sidefilter-options " id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            Место
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Место
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
                             <div class="accordion-body general_small-text">
-                            (фильтр)
+                                (фильтр)
                             </div>
                         </div>
                     </div>
@@ -103,13 +141,16 @@
                     <!--Period filter-->
                     <div class="accordion-item">
                         <h2 class="accordion-header sidefilter-options " id="panelsStayOpen-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                            Длительность
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Длительность
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
                             <div class="accordion-body general_small-text">
-                            (фильтр)
+                                (фильтр)
                             </div>
                         </div>
                     </div>
@@ -117,19 +158,21 @@
                     <!--Date filter-->
                     <div class="accordion-item">
                         <h2 class="accordion-header sidefilter-options " id="panelsStayOpen-headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                            Дата
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFive">
+                                Дата
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFive">
                             <div class="accordion-body general_small-text">
-                            (фильтр)
+                                (фильтр)
                             </div>
                         </div>
                         <button class="sideFilter_button buttons-text border-0">Показать</button>
                     </div>
 
-                    
                 </aside>
                 <!--Cards-->
                 <section class="col">
