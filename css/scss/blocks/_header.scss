@@ -1,0 +1,66 @@
+.header {
+    position: relative;
+    display: flex;
+
+    &__container {
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+
+    &__picture {
+        display: flex;
+        position: absolute;
+        width: 100%;
+
+        z-index: -2;
+        padding: 0px;
+    }
+
+    &__logo {
+        display: flex;
+        position: relative;
+        margin-top: 27px;
+        margin-left: 160px;
+
+        width: 40px;
+        height: 58px;
+    }
+
+    &__title {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 160px;
+        height: 88px;
+        width: 756px;
+    }
+
+    &__navbar {
+        margin-top: -20px;
+        margin-right: 160px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: right;
+    }
+
+    &__navbar-item {
+        line-height: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+        margin: 0px 0px 0px 30px;
+
+        &:visited {
+            color: $white;
+            /* Цвет посещённой ссылки */
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $yellow;
+            /* Цвет ссылки при наведении */
+            text-decoration: none;
+            /* Добавляем подчёркивание */
+        }
+    }
+}

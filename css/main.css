@@ -1,3 +1,7 @@
+
+=======
+@charset "UTF-8";
+
 @font-face {
   font-family: "Montserrat";
   src: url(/fonts/Montserrat-Bold.ttf);
@@ -347,6 +351,7 @@
   }
 }
 
+
 .mainFilter_container {
   height: 260px;
   border: 1px solid #0984aa;
@@ -449,5 +454,85 @@
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
+=======
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__container {
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.header__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  padding: 0px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 27px;
+  margin-left: 160px;
+  width: 40px;
+  height: 58px;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 160px;
+  height: 88px;
+  width: 756px;
+}
+
+.header__navbar {
+  margin-top: -20px;
+  margin-right: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.header__navbar-item {
+  line-height: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0px 0px 0px 30px;
+}
+
+.header__navbar-item:visited {
+  color: #FFFFFF;
+  /* Цвет посещённой ссылки */
+  text-decoration: none;
+}
+
+.header__navbar-item:hover {
+  color: #FFC700;
+  /* Цвет ссылки при наведении */
+  text-decoration: none;
+  /* Добавляем подчёркивание */
+
 }
 /*# sourceMappingURL=main.css.map */
