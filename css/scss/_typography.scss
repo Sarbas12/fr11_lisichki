@@ -152,6 +152,13 @@
     cursor: context-menu;
 }
 
+.sidefilter-text {
+    font-family: $title_font;
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
+}
+
 .cards-block_main-header {
     font-family: $title_font;
     font-size: 24px;
@@ -209,19 +216,19 @@
     cursor: context-menu;
 
     @include media-max-width(lg) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(md) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(sm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(xsm) {
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
@@ -233,19 +240,19 @@
     cursor: context-menu;
 
     @include media-max-width(lg) {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     @include media-max-width(md) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(sm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(xsm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
