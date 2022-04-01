@@ -1,0 +1,90 @@
+.cards_image {
+    height: 283px;
+    object-fit: cover;
+}
+
+.cards-block_section {
+    display: flex;
+    flex-direction: row;
+
+    @include media-min-width(md) {
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+.block_price-section {
+    display: flex;
+    flex-direction: row;
+
+    @include media-min-width(md) {
+        width: 71%;
+    }
+}
+
+.price-block_row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.price__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.block_time-section {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+
+    @include media-min-width(md) {
+        margin-left: 2%;
+    }
+}
+
+.clock__icon {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+}
+
+.block_card-text {
+    border-left: 3px $blue solid;
+    border-radius: 2px;
+}
+
+.cards__offer-button {
+    width: 160px;
+    height: 40px;
+
+    @include media-min-width(sm) {
+        width: 244px;
+        height: 40px;
+    }
+
+}
+
+.heart_button {
+    background: none;
+    border: 0;
+}
+
+.cards_time {
+    margin: 0 0 0 2%;
+    height: min-content;
+}
+
+.cards__switch-cursor {
+    cursor: pointer;
+    user-select: none;
+}

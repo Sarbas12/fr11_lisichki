@@ -16,308 +16,316 @@
     </style>
 </head>
 
-<!-- <body>
-    <aside class="side-filter">
-        <div class="accordion side-filter__people-block">
-            <div class="accordionItem" id="filterPeople">
-                <div class="accordion-header_container">
-                    <h2 class="accordion-header sidefilter-options">
-                        Количество человек
-                    </h2>
-                    <div class="accordion__button icon" data-bs-toggle="collapse" data-bs-target="#collapsePeople">
-                        <span class="icon_element-bar"></span>
-                        <span class="icon_element-bar"></span>
+<body>
+    <!-- header start -->
+    <header id="header">
+        <div class="header__container h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col">
+                    <img class="header__picture" src="assets/images/header_picture.png" alt="header picture">
+                    <img class="header__logo" src="assets/images/logo_color.png" alt="logo">
+                    <nav class="header__navbar">
+                        <a class="header__navbar-item nav-item header-subtitle" href="#tours">ЭКСКУРСИИ</a>
+                        <a class="header__navbar-item nav-item header-subtitle" href="#contacts">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__container-mobile hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#tours">ЭКСКУРСИИ</a></li>
+                <li><a class="menu__item" href="#contacts">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+        <h1 class="header__title header-title">НАШИ ЭКСКУРСИИ</h1>
+    </header>
+    <!-- header end -->
+
+    <main>
+        <!--Main Filter-->
+        <div class="mainFilter_container container  border-0">
+            <div class="container mainFilter">
+                <div class="row">
+                    <!-- <div class="col"></div> -->
+                    <div class="col">
+                        <nav class="mainfilter-text">
+                            <a id="busTourSection" class="mainfilter-text_item mainfilter-text" href="#">АВТОБУСНЫЙ
+                                ТУР</a>
+                            <a id="jeepTourSection" class="mainfilter-text_item mainfilter-text" href="#">ДЖИППИНГ</a>
+                            <a id="yachtTourSection" class="mainfilter-text_item mainfilter-text" href="#">ЯХТИНГ</a>
+                        </nav>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="input_place ">
+
+                            <i class="fa-solid  fa-location-dot fa-fade fa-2x" aria-hidden="true"></i>
+                            <input type="text" class="mainFilter_input_place border-0">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input type="date" class="mainFilter_input_date border-0">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="mainFilter_input_people border-0">
+                    </div>
+                    <div class="col">
+                        <button class="mainFilter_button buttons-text border-0">Показать</button>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div id="collapsePeople" class="collapse accordion-collapse" aria-labelledby="filterPeople">
-                    <button value="1" class="button button__inactive sidefilter-text">1 чел.</button>
-                    <button value="2" class="button button__inactive sidefilter-text">2 чел.</button>
-                    <button value="3" class="button button__inactive sidefilter-text">3 чел.</button>
-                    <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
-                    <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
-                    <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
-                    <button value="7" class="button button__inactive sidefilter-text">7 чел.</button>
-                    <button value="8" class="button button__inactive sidefilter-text">8 чел.</button>
-                    <button value="9" class="button button__inactive sidefilter-text">9 чел.</button>
-                    <button value="10" class="button button__inactive sidefilter-text">10 чел.</button>
-                    <button value="11" class="button button__inactive_wide sidefilter-text">Больше 10 чел.</button>
-                </div>
+        <div class="mainContent_container container">
+            <div class="row gx-3">
+                <!--Aside filter-->
+                <aside class="col-3 sidefilter accordion accordion-flush">
+                    <h3 class="sidefilter-header mt-3">Фильтры</h3>
+
+                    <!--Price filter-->
+                    <div class="accordion-item item_no-top-border">
+                        <div class="item__header">
+                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne">
+                                <span class="icon_element-bar"></span>
+                                <span class="icon_element-bar"></span>
+                            </div>
+                            <h2 class="accordion-header option_header sidefilter-options">
+                                Стоимость
+                            </h2>
+                        </div>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body general_small-text">
+
+                                <div class="wrapper">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="separator">-</div>
+                                        <div class="field">
+                                            <input type="number" class="input-max" value="7500">
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500"
+                                            step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500"
+                                            step="100">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--People filter-->
+                    <div class="accordion-item">
+
+                        <div class="item__header">
+                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo">
+                                <span class="icon_element-bar"></span>
+                                <span class="icon_element-bar"></span>
+                            </div>
+                            <h2 class="accordion-header option_header sidefilter-options">
+                                Количество человек
+                            </h2>
+
+                        </div>
+
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body accordion-body_no-margin">
+                                <button value="1" class="button button__inactive sidefilter-text">1 чел.</button>
+                                <button value="2" class="button button__inactive sidefilter-text">2 чел.</button>
+                                <button value="3" class="button button__inactive sidefilter-text">3 чел.</button>
+                                <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
+                                <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
+                                <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
+                                <button value="7" class="button button__inactive sidefilter-text">7 чел.</button>
+                                <button value="8" class="button button__inactive sidefilter-text">8 чел.</button>
+                                <button value="9" class="button button__inactive sidefilter-text">9 чел.</button>
+                                <button value="10" class="button button__inactive sidefilter-text">10 чел.</button>
+                                <button value="11" class="button button__inactive_wide sidefilter-text">Больше 10
+                                    чел.</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Location filter-->
+                    <div class="accordion-item">
+
+                        <div class="item__header">
+                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree">
+                                <span class="icon_element-bar"></span>
+                                <span class="icon_element-bar"></span>
+                            </div>
+                            <h2 class="accordion-header option_header sidefilter-options">
+                                Место
+                            </h2>
+                        </div>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body general_small-text">
+                                (фильтр)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Period filter-->
+                    <div class="accordion-item">
+
+                        <div class="item__header">
+                            <div class="accordion__button icon " data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour">
+                                <span class="icon_element-bar"></span>
+                                <span class="icon_element-bar"></span>
+                            </div>
+                            <h2 class="accordion-header option_header sidefilter-options">
+                                Длительность
+                            </h2>
+                        </div>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body general_small-text">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        1,5 часа
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        2,5 часа
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        6 часов
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Date filter-->
+                    <div class="accordion-item">
+
+                        <div class="item__header">
+                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive">
+                                <span class="icon_element-bar"></span>
+                                <span class="icon_element-bar"></span>
+                            </div>
+                            <h2 class="accordion-header option_header sidefilter-options">
+                                Дата
+                            </h2>
+                        </div>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body general_small-text">
+                                (фильтр)
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="offer_button buttons-text border-0 mt-4">Показать</button>
+                    <div class="button__reset mb-3" id="resetButton">
+                        <div class="button__reset-icon">
+                            <span class="icon__reset-button"></span>
+                            <span class="icon__reset-button"></span>
+                        </div>
+                        <p class="sidefilter-text icon__reset_text">Сбросить фильтры</p>
+                    </div>
+                </aside>
+
+                <!--Cards-->
+                <section class="col col-lg-9 col-md-6">
+                    <h2 class="cards-block_main-header user-select-none">Наши туры</h2>
+                    <div class="card">
+                        <img id="tourImage" src="images/asset_1.jpg"
+                            class="card-img-top img-fluid cards_image user-select-none" alt="...">
+                        <div class="card-body">
+                            <p id="tourType" class="cards-block_tour-type ms-2 user-select-none"></p>
+                            <p id="tourName" class="cards-block_tour-name ms-2 user-select-none"></p>
+                            <div class="cards-block_section">
+                                <div class="block_price-section">
+                                    <div class="price-block_row mx-3 mx-md-2">
+                                        <div class="price">
+                                            <img class="price__icon user-select-none"
+                                                src="images/_cards-icons/coins.svg" alt="coins">
+                                            <p id="adultPrice" class="cards-block_tour-price user-select-none"></p>
+                                        </div>
+                                        <div class="price_type cards-block_ticket-type user-select-none">
+                                            Взрослый билет
+                                        </div>
+                                    </div>
+                                    <div class="price-block_row">
+                                        <div class="price">
+                                            <img class="price__icon user-select-none"
+                                                src="images/_cards-icons/coins.svg" alt="coins">
+                                            <p id="childPrice" class="cards-block_tour-price user-select-none"></p>
+                                        </div>
+                                        <div class="price_type cards-block_ticket-type user-select-none">
+                                            Детский билет
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block_time-section">
+                                    <img class="clock__icon user-select-none" src="images/_cards-icons/clock.svg"
+                                        alt="clock">
+                                    <p id="tourDuration" class="cards-block_tour-price cards_time user-select-none"></p>
+                                </div>
+                            </div>
+                            <div id="tourDescription"
+                                class="block_card-text card-text general_small-text mx-3 mt-3 mb-1 ps-3 user-select-none">
+                            </div>
+
+                            <div class="cards_buttons d-flex flex-row align-items-center mt-4">
+                                <button
+                                    class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
+                                <button id="heartButton" class="heart_button user-select-none"><img class="mx-2"
+                                        src="images/heart_unselected.svg" alt="heart_icon"></button>
+                                <span id="heartButtonValue" class="cards-block_tour-price user-select-none">4</span>
+                            </div>
+                        </div>
+                        <div class="cards_switch-block d-flex flex-row align-self-center">
+                            <p id="previousButton" class="me-3 general_small-text cards__switch-cursor">&#8920;</p>
+                            <p id="counterNumber" class="general_small-text user-select-none">1</p>
+                            <p id="nextButton" class="ms-3 general_small-text cards__switch-cursor">&#8921;</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-        <button class="button__apply buttons-text" id="applyButton">Показать</button>
-        <div class="button__reset " id="resetButton">
-            <div class="button__reset-icon">
-                <span class="icon__reset-button"></span>
-                <span class="icon__reset-button"></span>
-            </div>
-            <p class="sidefilter-text icon__reset_text">Сбросить фильтры</p>
-        </div>
-    </aside>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script src="js/_side-filter/_people-filter.js"></script>
-    <script src="https://kit.fontawesome.com/aae706d4e5.js" crossorigin="anonymous"></script>
-    </head>
-
-    <body> -->
-<!-- header start -->
-<header id="header">
-    <div class="header__container h-100 d-flex flex-column">
-        <div class="row">
-            <div class="col">
-                <img class="header__picture" src="assets/images/header_picture.png" alt="header picture">
-                <img class="header__logo" src="assets/images/logo_color.png" alt="logo">
-                <nav class="header__navbar">
-                    <a class="header__navbar-item nav-item header-subtitle" href="#tours">ЭКСКУРСИИ</a>
-                    <a class="header__navbar-item nav-item header-subtitle" href="#contacts">КОНТАКТЫ</a>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <div class="header__container-mobile hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#tours">ЭКСКУРСИИ</a></li>
-            <li><a class="menu__item" href="#contacts">КОНТАКТЫ</a></li>
-        </ul>
-    </div>
-    <h1 class="header__title header-title">НАШИ ЭКСКУРСИИ</h1>
-</header>
-<!-- header end -->
-
-<main>
-    <!--Main Filter-->
-    <div class="mainFilter_container container  border-0">
-        <div class="container mainFilter">
-            <div class="row">
-                <!-- <div class="col"></div> -->
-                <div class="col">
-                    <nav class="mainfilter-text">
-                        <a class="mainfilter-text_item mainfilter-text" href="#">АВТОБУСНЫЙ ТУР</a>
-                        <a class="mainfilter-text_item mainfilter-text" href="#">ДЖИППИНГ</a>
-                        <a class="mainfilter-text_item mainfilter-text" href="#">ЯХТИНГ</a>
-                    </nav>
-                </div>
-                <!-- <div class="col"></div> -->
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="input_place ">
-
-                        <i class="fa-solid  fa-location-dot fa-fade fa-2x" aria-hidden="true"></i>
-                        <input type="text" class="mainFilter_input_place border-0">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <input type="date" class="mainFilter_input_date border-0">
-                </div>
-                <div class="col">
-                    <input type="text" class="mainFilter_input_people border-0">
-                </div>
-                <div class="col">
-                    <button class="mainFilter_button buttons-text border-0">Показать</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mainContent_container container">
-        <div class="row gx-3">
-            <!--Aside filter-->
-            <aside class="col-3 sidefilter accordion accordion-flush">
-                <h3 class="sidefilter-header mt-3">Фильтры</h3>
-
-                <!--Price filter-->
-                <div class="accordion-item item_no-top-border">
-                    <div class="item__header">
-                        <div class="accordion__button  icon " data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne">
-                            <span class="icon_element-bar"></span>
-                            <span class="icon_element-bar"></span>
-                        </div>
-                        <h2 class="accordion-header option_header sidefilter-options">
-                            Стоимость
-                        </h2>
-                    </div>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body general_small-text">
-
-                            <div class="wrapper">
-                                <div class="price-input">
-                                    <div class="field">
-                                        <input type="number" class="input-min" value="2500">
-                                    </div>
-                                    <div class="separator">-</div>
-                                    <div class="field">
-                                        <input type="number" class="input-max" value="7500">
-                                    </div>
-                                </div>
-                                <div class="slider">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="range-input">
-                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!--People filter-->
-                <div class="accordion-item">
-
-                    <div class="item__header">
-                        <div class="accordion__button  icon " data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo">
-                            <span class="icon_element-bar"></span>
-                            <span class="icon_element-bar"></span>
-                        </div>
-                        <h2 class="accordion-header option_header sidefilter-options">
-                            Количество человек
-                        </h2>
-
-                    </div>
-
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body accordion-body_no-margin">
-                            <button value="1" class="button button__inactive sidefilter-text">1 чел.</button>
-                            <button value="2" class="button button__inactive sidefilter-text">2 чел.</button>
-                            <button value="3" class="button button__inactive sidefilter-text">3 чел.</button>
-                            <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
-                            <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
-                            <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
-                            <button value="7" class="button button__inactive sidefilter-text">7 чел.</button>
-                            <button value="8" class="button button__inactive sidefilter-text">8 чел.</button>
-                            <button value="9" class="button button__inactive sidefilter-text">9 чел.</button>
-                            <button value="10" class="button button__inactive sidefilter-text">10 чел.</button>
-                            <button value="11" class="button button__inactive_wide sidefilter-text">Больше 10
-                                чел.</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Location filter-->
-                <div class="accordion-item">
-
-                    <div class="item__header">
-                        <div class="accordion__button  icon " data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree">
-                            <span class="icon_element-bar"></span>
-                            <span class="icon_element-bar"></span>
-                        </div>
-                        <h2 class="accordion-header option_header sidefilter-options">
-                            Место
-                        </h2>
-                    </div>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body general_small-text">
-                            (фильтр)
-                        </div>
-                    </div>
-                </div>
-
-                <!--Period filter-->
-                <div class="accordion-item">
-
-                    <div class="item__header">
-                        <div class="accordion__button icon " data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFour">
-                            <span class="icon_element-bar"></span>
-                            <span class="icon_element-bar"></span>
-                        </div>
-                        <h2 class="accordion-header option_header sidefilter-options">
-                            Длительность
-                        </h2>
-                    </div>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body general_small-text">
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1" checked>
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    1,5 часа
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    2,5 часа
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault3">
-                                <label class="form-check-label" for="flexRadioDefault3">
-                                    6 часов
-                                </label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!--Date filter-->
-                <div class="accordion-item">
-
-                    <div class="item__header">
-                        <div class="accordion__button  icon " data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseFive">
-                            <span class="icon_element-bar"></span>
-                            <span class="icon_element-bar"></span>
-                        </div>
-                        <h2 class="accordion-header option_header sidefilter-options">
-                            Дата
-                        </h2>
-                    </div>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingFive">
-                        <div class="accordion-body general_small-text">
-                            (фильтр)
-                        </div>
-                    </div>
-
-                </div>
-                <button class="sideFilter_button buttons-text border-0 mt-4">Показать</button>
-                <div class="button__reset mb-3" id="resetButton">
-                    <div class="button__reset-icon">
-                        <span class="icon__reset-button"></span>
-                        <span class="icon__reset-button"></span>
-                    </div>
-                    <p class="sidefilter-text icon__reset_text">Сбросить фильтры</p>
-                </div>
-            </aside>
-
-            <!--Cards-->
-            <section class="col ">
-                <h2 class="cards-block_main-header">Наши туры</h2>
-                <div class="p-3">Содержание карточки</div>
-
-            </section>
-        </div>
-    </div>
-</main>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
-<script src="js/script.js"></script>
-<script src="js/_side-filter/_side-filter.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/_side-filter/_side-filter.js"></script>
+    <script src="js/_cards.js"></script>
 </body>
 
 </html>
