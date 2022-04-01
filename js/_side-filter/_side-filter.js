@@ -21,20 +21,30 @@ for(i=0; i<crossButton.length; i++){
 
 
 let outputData = {
-    peopleAmount: ""
+    peopleAmount: "",
+    minPrice:"",
+    maxPrice:""
 };
 
 const checkPeopleAmount = () =>{
     try{
-        peopleAmountSelected = document.querySelector(".button__active")
+        let peopleAmountSelected = document.querySelector(".button__active")
         outputData.peopleAmount = peopleAmountSelected.value
     }
     catch{
         return
     }
 }
+
+const checkPriceLimits = () =>{
+    let priceLimits = document.querySelectorAll(".price-input > div > input");
+    outputData.minPrice = priceLimits[0].value;
+    outputData.maxPrice = priceLimits[1].value;
+
+}
 const applyParameters = () =>{
     checkPeopleAmount()
+    checkPriceLimits()
     }
 
 applyButton.onclick = function (){applyParameters()}
