@@ -5,21 +5,22 @@
     font-size: 12px;
     font-weight: 500;
     color: $black;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
-        font-size: 64px;
+        font-size: 12px;
     }
 
     @include media-max-width(md) {
-        font-size: 54px;
+        font-size: 12px;
     }
 
     @include media-max-width(sm) {
-        font-size: 48px;
+        font-size: 12px;
     }
 
     @include media-max-width(xsm) {
-        font-size: 42px;
+        font-size: 12px;
     }
 }
 
@@ -28,6 +29,7 @@
     font-size: 72px;
     font-weight: 700;
     color: $white;
+    cursor: context-menu;
 
 
     @include media-max-width(lg) {
@@ -83,6 +85,7 @@
     font-size: 14px;
     font-weight: 500;
     color: $black;
+    cursor: context-menu;
 
     // color: $light;
     @include media-max-width(lg) {
@@ -113,6 +116,7 @@
     font-size: 14px;
     font-weight: 700;
     color: $white;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
         font-size: 14px;
@@ -136,6 +140,7 @@
     font-size: 14px;
     font-weight: 700;
     color: $blue;
+    cursor: context-menu;
 
 }
 
@@ -144,6 +149,14 @@
     font-size: 14px;
     font-weight: 700;
     color: $black;
+    cursor: context-menu;
+}
+
+.sidefilter-text {
+    font-family: $title_font;
+    font-size: 12px;
+    font-weight: 500;
+    color: $black;
 }
 
 .cards-block_main-header {
@@ -151,6 +164,7 @@
     font-size: 24px;
     font-weight: 700;
     color: $blue;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
         font-size: 24px;
@@ -174,6 +188,7 @@
     font-size: 12px;
     font-weight: 500;
     color: $yellow;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
         font-size: 12px;
@@ -197,21 +212,23 @@
     font-size: 18px;
     font-weight: 700;
     color: $black;
+    line-height: 0;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(md) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(sm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(xsm) {
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
@@ -220,21 +237,22 @@
     font-size: 18px;
     font-weight: 700;
     color: $blue;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     @include media-max-width(md) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(sm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     @include media-max-width(xsm) {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -243,6 +261,7 @@
     font-size: 10px;
     font-weight: 500;
     color: $black;
+    cursor: context-menu;
 
     @include media-max-width(lg) {
         font-size: 10px;
