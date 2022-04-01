@@ -822,6 +822,18 @@
   margin-right: 10px;
 }
 
+.sideFilter_button {
+  width: 144px;
+  height: 40px;
+}
+
+@media (min-width: 576px) {
+  .sideFilter_button {
+    width: 224px;
+    height: 40px;
+  }
+}
+
 ::-moz-selection {
   color: #fff;
   background: #17A2B8;
