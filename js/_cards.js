@@ -33,7 +33,7 @@ const cardsBus = `[{
     "name":"Красная поляна",
     "adultPrice":"2 700₽",
     "childPrice":"2 600₽",
-    "duration":"2,5 часа",
+    "duration":"6 часов",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "likes":"2"
 }
@@ -74,7 +74,7 @@ const cardsJeep = `[{
     "name":"Джипинг в Адлере",
     "adultPrice":"3 700₽",
     "childPrice":"3 300₽",
-    "duration":"1,5 часа",
+    "duration":"6 часов",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "likes":"11"
 }
@@ -115,7 +115,7 @@ const cardsYacht = `[{
     "name":"Яхтинг в Красной Поляне",
     "adultPrice":"6 500₽",
     "childPrice":"5 400₽",
-    "duration":"2,5 часа",
+    "duration":"6 часов",
     "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "likes":"15"
 }
