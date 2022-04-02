@@ -3,18 +3,17 @@
     display: flex;
 
     &__container {
-
         height: auto;
         width: auto;
     }
 
     &__picture {
         display: flex;
-        position: absolute;
+        position: relative;
         width: 100%;
 
-        z-index: -2;
-        padding: 0px;
+        z-index: -5;
+        // padding: 0px;
     }
 
     &__logo {

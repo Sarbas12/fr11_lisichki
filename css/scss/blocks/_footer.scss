@@ -1,44 +1,4 @@
-.footer {
-    position: relative;
-    display: flex;
-
-    &__container {
-        display: flex;
-        height: 175px;
-        width: 1440px;
-        margin-left: 0px;
-        margin-top: 2105px;
-        border-radius: 0px;
-
-        width: auto;
-        background-color: #EDEDED;
-    }
-
-    &__header__logo {
-        display: flex;
-        position: relative;
-        margin-top: 2000px;
-        margin-left: 160px;
-
-        width: 80px;
-        height: 114px;
-
-        @media (max-width:map-get($grid-breakpoints, md)) {
-            display: none;
-        }
-    }
-}
-
-.footer__icon {
-    display: flex;
-    position: relative;
-    // margin: 790px 52px 102px 632px;
-
-    // height: 5px;
-    // width: 5px;
-    // height: 18.402381896972656px;
-    // width: 18.254182815551758px;
-    // left: 0.52294921875px;
-    // top: 0.5130615234375px;
-    border-radius: 0px;
-}
+// .footer {
+//     display: flex;
+//     justify-content: space-around;
+// }
