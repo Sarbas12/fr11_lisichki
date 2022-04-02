@@ -66,8 +66,15 @@
                 <div class="row">
                     <div class="col">
                         <div class="input_place ">
+<<<<<<< HEAD
                             <i class="fa-solid  fa-location-dot  " aria-hidden="true"></i>
                             <input type="text" class="mainFilter_input_place border-0">
+=======
+
+                            <i class="fa-solid  fa-location-dot  " aria-hidden="true"></i>
+                            <input type="text" class="mainFilter_input_place border-0">
+
+>>>>>>> 867392a9f01e9a9621351b7c809c25bb01d11732
                         </div>
                     </div>
                     <div class="col">
@@ -76,7 +83,7 @@
                     <div class="col">
                         <div class="input_people">
                             <i class="fa-solid fa-user-group " aria-hidden="true"></i>
-                            <input type="text" class="mainFilter_input_people border-0">
+                            <input id="peopleFilterMain" type="text" class="mainFilter_input_people border-0">
                         </div>
                     </div>
                     <div class="col">
@@ -151,18 +158,14 @@
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingTwo">
                             <div class="accordion-body accordion-body_no-margin">
-                                <button value="1" class="button button__inactive sidefilter-text">1 чел.</button>
+                                <button value="1" class="button button__inactive button__active sidefilter-text">1
+                                    чел.</button>
                                 <button value="2" class="button button__inactive sidefilter-text">2 чел.</button>
                                 <button value="3" class="button button__inactive sidefilter-text">3 чел.</button>
                                 <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
                                 <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
                                 <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
-                                <button value="7" class="button button__inactive sidefilter-text">7 чел.</button>
-                                <button value="8" class="button button__inactive sidefilter-text">8 чел.</button>
-                                <button value="9" class="button button__inactive sidefilter-text">9 чел.</button>
-                                <button value="10" class="button button__inactive sidefilter-text">10 чел.</button>
-                                <button value="11" class="button button__inactive_wide sidefilter-text">Больше 10
-                                    чел.</button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -206,21 +209,21 @@
 
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
+                                        id="flexRadioDefault1" value="1,5" checked>
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         1,5 часа
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
+                                        id="flexRadioDefault2" value="2,5">
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         2,5 часа
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault3">
+                                        id="flexRadioDefault3" value="6">
                                     <label class="form-check-label" for="flexRadioDefault3">
                                         6 часов
                                     </label>
@@ -248,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="offer_button sideFilter_button buttons-text border-0 mt-4">Показать</button>
+                    <button id="applyButton" class="offer_button buttons-text border-0 mt-4">Показать</button>
                     <div class="button__reset mb-3" id="resetButton">
                         <div class="button__reset-icon">
                             <span class="icon__reset-button"></span>
@@ -262,6 +265,7 @@
                 <!--Cards Start-->
                 <section class="col col-lg-9 col-md-6">
                     <h2 class="cards-block_main-header user-select-none">Наши туры</h2>
+                    <p id="filterResult" class="cards-block_tour-price"></p>
                     <div class="card">
                         <img id="tourImage" src="images/asset_1.jpg"
                             class="card-img-top img-fluid cards_image user-select-none" alt="...">
@@ -304,9 +308,9 @@
                             <div class="cards_buttons d-flex flex-row align-items-center mt-4">
                                 <button id="offer_button"
                                     class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
-                                <button id="heartButton" class="heart_button user-select-none"><img class="mx-2"
-                                        src="images/heart_unselected.svg" alt="heart_icon"></button>
-                                <span id="heartButtonValue" class="cards-block_tour-price user-select-none">4</span>
+                                <button id="heartButton" class="heart_button user-select-none">&#9825;</button>
+                                <span id="heartButtonValue"
+                                    class="cards-block_tour-price user-select-none ms-3">4</span>
                             </div>
                         </div>
                         <div class="cards_switch-block d-flex flex-row align-self-center">
