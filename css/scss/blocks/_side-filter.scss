@@ -172,6 +172,17 @@
     margin-right: 10px;
 }
 
+.sideFilter_button {
+    width: 144px;
+    height: 40px;
+
+    @include media-min-width(sm) {
+        width: 224px;
+        height: 40px;
+    }
+
+}
+
 
 // css for price filter
 

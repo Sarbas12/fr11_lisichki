@@ -1,0 +1,42 @@
+.feedbackForm {
+    display: none;
+
+}
+
+.feedbackForm_visible {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid $blue;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(170, 226, 243);
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+.formButton {
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 40px;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nameInput,
+.telInput,
+.emailInput {
+    margin-bottom: 20px;
+}
+
+.formButton_close {
+    background: linear-gradient(92.71deg, #ec9397 0%, #f7a9c7 100%);
+}
+
+.formFullScreen {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
