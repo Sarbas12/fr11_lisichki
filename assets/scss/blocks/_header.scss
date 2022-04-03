@@ -25,9 +25,6 @@ header {
         width: 40px;
         height: 58px;
 
-        @media (max-width:map-get($grid-breakpoints, md)) {
-            display: none;
-        }
     }
 
     &__title {
@@ -37,6 +34,16 @@ header {
 
         width: 756px;
         height: 88px;
+
+        @include media-max-width(md) {
+            text-align: center;
+            margin-left: 75px;
+        }
+
+        @include media-max-width(sm) {
+            text-align: center;
+            margin-left: 24px;
+        }
     }
 
     &__navbar {
@@ -60,6 +67,7 @@ header {
         &:hover {
             color: $yellow;
             text-decoration: none;
+            padding-left: 8px;
         }
     }
 

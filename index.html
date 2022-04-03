@@ -10,6 +10,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/aae706d4e5.js" crossorigin="anonymous"></script>
 
     <style>
@@ -27,7 +30,7 @@
                     <img class="header__logo" src="images/logo_color.png" alt="logo">
                     <nav class="header__navbar">
                         <a class="header__navbar-item nav-item header-subtitle" href="#tourImage">ЭКСКУРСИИ</a>
-                        <a class="header__navbar-item nav-item header-subtitle" href="#contacts">КОНТАКТЫ</a>
+                        <a class="header__navbar-item nav-item header-subtitle" href="#footer">КОНТАКТЫ</a>
                     </nav>
                 </div>
             </div>
@@ -323,57 +326,38 @@
 
         <!-- footer start -->
         <footer id="footer">
-            <div class="footer__container d-flex h-100">
+            <div class="container">
                 <div class="row">
-                    <!-- <div class="footer-col"> -->
-                    <img id="logo2" src="images/logo_color.png" alt="logo2">
-                </div>
-                <!-- <div class="footer-col"> -->
-                <div class="nav-footer">
-                    <p><a class="menu-footer footer_subtitle-tex" href="#tourImage">Экскурсии</a></p>
-                    <p><a class="menu-footer footer_subtitle-tex" href="#contacts">Контакты</a></p>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <div class="contacts-footer">
-                    <p><img src="images/whatsapp_icon.png" width="18px" height="18px" alt="whatsapp_tel">
-                        <a class="our-contacts" href="https://wa.me/79649441874">+7 964 944 18 74
-                        </a>
-                    </p>
-                    <p class="phone">
-                        <img src="images/telegram_icon.png" alt="telegram_tel">
-                        <a class="our-contacts" href="https://telegram.me/79189199828">+7 918 919 98 28</a>
-                    </p>
-                    <p class="phone-bot">
-                        <img src="images/telegram_icon.png" alt="telegram_tel">
-                        <a class="our-contacts" href="https://telegram.me/botperotravel">Телеграм-бот
-                            PeroTravel</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="footer-col">
-                <p class="mail">
-                    <img src="images/mail_png.png" width="18px" height="18px" alt="mail">
-                    <a class="our-contacts" href="mailto:office@perotravel.ru">office@perotravel.ru</a>
-                </p>
-                <div class="footer-col">
-                    <div class="social-webs">
-                        <a class="logo-link" href="https://vk.com">
-                            <img src="images/vk_icon.png" alt="vk-logo">
-                        </a>
-                        <a class="logo-link" href="https://instagram.com">
-                            <img src="images/instagram.png" width="25px" height="25px" alt="instagram-logo">
-                        </a>
-                        <a class="logo-link" href="https://www.facebook.com/">
-                            <img src="images/facebook_icon.png" alt="facebook-logo">
-                        </a>
+                    <div class="footer-col">
+                        <ul>
+                            <li> <img class="footer_logo" src="images/logo_color.png" alt="logo2">
+                                <a class="footer_logo" href="#tourImage"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <!-- <div class="nav-footer"> -->
+                        <ul>
+                            <li><a class="menu-footer footer_subtitle-tex" href="#tourImage">Экскурсии</a></li>
+                            <li><a class="menu-footer footer_subtitle-tex" href="#feedbackForm">Обратная связь</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div>
+                <div class="footer-col">
+                    <div class="footer-contacts">
+                        <a href="https://wa.me/79649441874"><i class="fa fa-whatsapp">+7 964 944 18 74</i></a>
+                        <a href="https://telegram.me/79189199828"><i class="fa fa-telegram">+7 918 919 98 28</i></a>
+                        <a href="https://telegram.me/79189199828"><i class="fa fa-telegram">Телеграм-бот
+                                Pero Travel</i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                        <a href="https://vk.com"><i class="fa fa-vk"></i></a>
+                        <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
         </footer>
         <!-- footer end -->
     </main>
