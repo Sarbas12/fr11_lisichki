@@ -104,7 +104,7 @@
                     <!--Price filter-->
                     <div class="accordion-item item_no-top-border">
                         <div class="item__header">
-                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                            <div class="accordion__button  icon" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne">
                                 <span class="icon_element-bar"></span>
                                 <span class="icon_element-bar"></span>
@@ -113,7 +113,7 @@
                                 Стоимость
                             </h2>
                         </div>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body general_small-text">
 
@@ -137,8 +137,10 @@
                                             step="100">
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
 
                     <!--People filter-->
@@ -164,7 +166,7 @@
                                 <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
                                 <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
                                 <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
-                                </button>
+                                
                             </div>
                         </div>
                     </div>
@@ -250,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="applyButtonSide" class="offer_button buttons-text border-0 mt-4">Показать</button>
+                    <button id="applyButtonSide" class="offer_button sideFilter_button buttons-text border-0 mt-4">Показать</button>
                     <div class="button__reset mb-3" id="resetButton">
                         <div class="button__reset-icon">
                             <span class="icon__reset-button"></span>
@@ -305,8 +307,7 @@
                             </div>
 
                             <div class="cards_buttons d-flex flex-row align-items-center mt-4">
-                                <button id="offer_button"
-                                    class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
+                                <button onclick="show('block')" id="offer_button" class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
                                 <button id="heartButton" class="heart_button user-select-none">&#9825;</button>
                                 <span id="heartButtonValue"
                                     class="cards-block_tour-price user-select-none ms-3">4</span>
@@ -362,32 +363,71 @@
         <!-- footer end -->
     </main>
 
-    <!--Feedback Form-->
-    <div class="formFullScreen">
-        <form action="" method="get" class="feedbackForm">
-            <h3>Оставьте свои контактные данные и мы свяжемся с вами!</h3>
-
+<!--Feedback Form-->
+<div id="filter" onclick="show('none')"></div>
+<div class="modalForm" id="modalForm">
+    <form action="" method="get" class="feedbackForm" id="feedbackForm">
+        <h3>Оставьте свои контактные данные и мы свяжемся с вами!</h3>
+        <div id="errNameBorder">
             <label for="userName">Ваше имя</label>
-            <input class="nameInput" type="text" id="userName" autofocus>
-            <label for="userTel">Номер телефона</label>
-            <input class="telInput" type="number" id="userTel">
-            <label for="userEmail">Email</label>
-            <input class="emailInput" type="email" id="userEmail">
+            <input class="nameInput" type="text" id="userName" name="userName" autofocus required oninput="dataError('errName')">
+            <p class="dataError" id="errName"></p>
+        </div>
+        <div id="errMobileBorder">
+            <label for="userTel">Телефон</label>
+        <input class="telInput" type="number" id="userTel" name="userTel" oninput="dataError('errMobile')">
+            <p class="dataError" id="errMobile"></p>
+        </div> 
+        <div id="errEmailBorder">
+            <label for="userEmail">Ваш Email</label>
+        <input class="emailInput" type="email" id="userEmail" name="userEmail" oninput="dataError('errEmail')">
+            <p class="dataError" id="errEmail"></p>
+        </div>
+        
+        <div class="formButtons">
+            <button  class="formButton buttons-text border-0" id="sendData">Отправить</button>
+            <button  class="formButton formButton_close buttons-text border-0" id="closeForm">Закрыть</button>
+        </div>
+    </form>
+</div>
 
-            <div class="formButtons">
-                <button class="formButton buttons-text border-0" id="sendData">Отправить</button>
-                <button class="formButton formButton_close buttons-text border-0" id="closeForm">Закрыть</button>
-            </div>
-        </form>
-    </div>
+<div class="appSentOff" id="appSent">
+    <p class="appSentText">
+        Мы получили вашу заявку. Оператор свяжется с вами в ближайшее время.
+    </p>
+</div>
+<div class="errSentOff" id="errSent">
+    <p class="errSentText">
+        Что-то пошло не так.. Попробуйте еще раз.
+    </p>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="js/_feedback_form/_feedback_form.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/_side-filter/_side-filter.js"></script>
-    <script src="js/_cards.js"></script>
+
+<!-- <div  class="formFullScreen">
+    <form action="" method="get" class="feedbackForm" id="feedbackModal">
+        <h3>Оставьте свои контактные данные и мы свяжемся с вами!</h3>
+        
+        <label for="userName">Ваше имя</label>
+        <input class="nameInput" type="text" id="userName" autofocus> 
+        <label for="userTel">Номер телефона</label>
+        <input class="telInput" type="number" id="userTel">
+        <label for="userEmail">Email</label>
+        <input class="emailInput" type="email" id="userEmail">
+         
+        <div class="formButtons">
+            <button  class="formButton buttons-text border-0" id="sendData">Отправить</button>
+            <button  class="formButton formButton_close buttons-text border-0" id="closeForm">Закрыть</button>
+        </div>
+    </form>
+    </div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="js/_feedback_form/_feedback_form.js"></script>
+<script src="js/script.js"></script>
+<script src="js/_side-filter/_side-filter.js"></script>
+<script src="js/_cards.js"></script>
 </body>
 
 </html>
