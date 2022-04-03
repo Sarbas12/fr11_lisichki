@@ -177,7 +177,7 @@
     height: 40px;
 
     @include media-min-width(sm) {
-        width: 224px;
+        width: 124px;
         height: 40px;
     }
 
@@ -214,6 +214,10 @@
     border-radius: 10px;
     padding: 20px 0px 40px;
 
+    @include media-min-width(sm) {
+        width: 150px;
+
+    }
 }
 
 

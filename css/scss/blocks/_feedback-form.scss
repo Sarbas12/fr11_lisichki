@@ -77,3 +77,31 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+.appSentOff {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    display: none;
+}
+
+.appSent {
+    display: block;
+}
+
+.errSentOff {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    display: none;
+}
+
+.appSent {
+    display: block;
+}

@@ -100,7 +100,7 @@
                     <!--Price filter-->
                     <div class="accordion-item item_no-top-border">
                         <div class="item__header">
-                            <div class="accordion__button  icon " data-bs-toggle="collapse"
+                            <div class="accordion__button  icon" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne">
                                 <span class="icon_element-bar"></span>
                                 <span class="icon_element-bar"></span>
@@ -109,32 +109,34 @@
                                 Стоимость
                             </h2>
                         </div>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
                             aria-labelledby="panelsStayOpen-headingOne">
                             <div class="accordion-body general_small-text">
 
                                 <div class="wrapper">
                                     <div class="price-input">
                                         <div class="field">
-                                            <input type="number" class="input-min" value="3000">
+                                            <input type="number" class="input-min" value="2500">
                                         </div>
                                         <div class="separator">-</div>
                                         <div class="field">
-                                            <input type="number" class="input-max" value="4000">
+                                            <input type="number" class="input-max" value="7500">
                                         </div>
                                     </div>
                                     <div class="slider">
                                         <div class="progress"></div>
                                     </div>
                                     <div class="range-input">
-                                        <input type="range" class="range-min" min="2000" max="5000" value="3000"
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500"
                                             step="100">
-                                        <input type="range" class="range-max" min="2000" max="5000" value="4000"
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500"
                                             step="100">
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
 
                     <!--People filter-->
@@ -160,7 +162,7 @@
                                 <button value="4" class="button button__inactive sidefilter-text">4 чел.</button>
                                 <button value="5" class="button button__inactive sidefilter-text">5 чел.</button>
                                 <button value="6" class="button button__inactive sidefilter-text">6 чел.</button>
-                                </button>
+                                
                             </div>
                         </div>
                     </div>
@@ -246,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="applyButton" class="offer_button buttons-text border-0 mt-4">Показать</button>
+                    <button id="applyButton" class="offer_button sideFilter_button buttons-text border-0 mt-4">Показать</button>
                     <div class="button__reset mb-3" id="resetButton">
                         <div class="button__reset-icon">
                             <span class="icon__reset-button"></span>
@@ -301,8 +303,7 @@
                             </div>
 
                             <div class="cards_buttons d-flex flex-row align-items-center mt-4">
-                                <button id="offer_button"
-                                    class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
+                                <button onclick="show('block')" id="offer_button" class="offer_button cards__offer-button buttons-text border-0  user-select-none">Заказать</button>
                                 <button id="heartButton" class="heart_button user-select-none">&#9825;</button>
                                 <span id="heartButtonValue"
                                     class="cards-block_tour-price user-select-none ms-3">4</span>
@@ -325,21 +326,40 @@
 <!--Feedback Form-->
 <div id="filter" onclick="show('none')"></div>
 <div class="modalForm" id="modalForm">
-    <form action="" method="get" class="feedbackForm">
+    <form action="" method="get" class="feedbackForm" id="feedbackForm">
         <h3>Оставьте свои контактные данные и мы свяжемся с вами!</h3>
-        
-        <label for="userName">Ваше имя</label>
-        <input class="nameInput" type="text" id="userName" autofocus> 
-        <label for="userTel">Номер телефона</label>
-        <input class="telInput" type="number" id="userTel">
-        <label for="userEmail">Email</label>
-        <input class="emailInput" type="email" id="userEmail">
+        <div id="errNameBorder">
+            <label for="userName">Ваше имя</label>
+            <input class="nameInput" type="text" id="userName" name="userName" autofocus required oninput="dataError('errName')">
+            <p class="dataError" id="errName"></p>
+        </div>
+        <div id="errMobileBorder">
+            <label for="userTel">Телефон</label>
+        <input class="telInput" type="number" id="userTel" name="userTel" oninput="dataError('errMobile')">
+            <p class="dataError" id="errMobile"></p>
+        </div> 
+        <div id="errEmailBorder">
+            <label for="userEmail">Ваш Email</label>
+        <input class="emailInput" type="email" id="userEmail" name="userEmail" oninput="dataError('errEmail')">
+            <p class="dataError" id="errEmail"></p>
+        </div>
         
         <div class="formButtons">
             <button  class="formButton buttons-text border-0" id="sendData">Отправить</button>
             <button  class="formButton formButton_close buttons-text border-0" id="closeForm">Закрыть</button>
         </div>
     </form>
+</div>
+
+<div class="appSentOff" id="appSent">
+    <p class="appSentText">
+        Мы получили вашу заявку. Оператор свяжется с вами в ближайшее время.
+    </p>
+</div>
+<div class="errSentOff" id="errSent">
+    <p class="errSentText">
+        Что-то пошло не так.. Попробуйте еще раз.
+    </p>
 </div>
 
 
