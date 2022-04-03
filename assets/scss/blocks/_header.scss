@@ -13,7 +13,6 @@ header {
         width: 100%;
 
         z-index: -5;
-        // padding: 0px;
     }
 
     &__logo {
@@ -24,7 +23,6 @@ header {
 
         width: 40px;
         height: 58px;
-
     }
 
     &__title {
@@ -61,7 +59,7 @@ header {
     &__navbar-item {
         line-height: inherit;
         text-decoration: none;
-        transition: all 0.3s;
+        transition: all 0.5s;
         margin: 0px 0px 0px 30px;
 
         &:hover {
