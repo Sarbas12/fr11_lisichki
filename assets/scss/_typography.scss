@@ -28,7 +28,7 @@
     font-family: $title_font;
     font-size: 72px;
     font-weight: 700;
-    color: $blue;
+    color: $white;
     cursor: context-menu;
 
 
@@ -37,15 +37,15 @@
     }
 
     @include media-max-width(md) {
-        font-size: 48px;
-    }
-
-    @include media-max-width(sm) {
         font-size: 36px;
     }
 
-    @include media-max-width(xsm) {
+    @include media-max-width(sm) {
         font-size: 28px;
+    }
+
+    @include media-max-width(xsm) {
+        font-size: 18px;
     }
 }
 
