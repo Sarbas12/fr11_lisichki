@@ -5,8 +5,8 @@
 
 }
 
-.container {
-    max-width: 1170px;
+.container-footer {
+    max-width: 100%;
     background-color: $dark-gray;
     margin: auto;
 }
@@ -27,11 +27,16 @@ ul {
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 25px;
+}
+
+.row-padding {
+    padding-top: 30px;
 }
 
 .footer-col footer_logo {
     position: relative;
+    margin-top: 10px;
     margin-left: 160px;
 }
 
@@ -40,41 +45,53 @@ ul {
 }
 
 .footer-col ul li a {
+    margin-top: 10px;
     text-transform: capitalize;
     font: $title_font;
     display: block;
+    color: $black;
     transition: all 0.3s;
+    text-decoration: none;
 
     .footer-col ul li a:hover {
         color: $yellow;
-        text-decoration: none;
         padding-left: 8px;
     }
 }
 
 .footer-col .footer-contacts a {
+    margin-top: 10px;
+    text-transform: capitalize;
     display: flex;
     position: relative;
     transition: all 0.3s;
+    text-decoration: none;
 
     .footer-col .footer-contacts a:hover {
         color: $yellow;
-        text-decoration: none;
         padding-left: 8px;
     }
-
 }
+
+.footer-col .footer-contacts .fa-whatsapp,
+.fa-telegram {
+    font-size: 12px;
+    text-decoration: none;
+    color: $black;
+}
+
 
 .footer-col .social-links a {
     display: inline-block;
+    margin-top: 20px;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: $white;
     margin: 0 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: $white;
+    color: $blue;
     transition: all 0.5s;
 
     .footer-col .social-links a:hover {
