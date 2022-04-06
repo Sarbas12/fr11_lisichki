@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .container-footer {
+    // display: flex;
     max-width: 100%;
+    // margin: auto;
     background-color: $dark-gray;
-    margin: auto;
 }
 
 .row {
@@ -21,7 +21,6 @@ ul {
 }
 
 .footer {
-    // background-color: black;
     padding: 70px 0;
 }
 
